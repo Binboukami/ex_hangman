@@ -2,14 +2,18 @@
 #define HANGMAN_H
 #include <stdio.h>
 
-char* teste = "amendoim";
+#define WORD_SZ 16
+
+char* word[WORD_SZ];
+char* mask[WORD_SZ];
+char* input_history[WORD_SZ];
 
 void draw_boneco() {
-	printf("%s", teste);
+	// TODO
 }
 
 void process() {
-	//
+	// TODO
 }
 
 #endif //HANGMAN_H
