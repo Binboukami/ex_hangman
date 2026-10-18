@@ -12,8 +12,8 @@
 
 /** KEYBINDS **/
 #define KEY_ESC 27
-#define KEY_A 65
-#define KEY_Q 81
+// #define KEY_A 65
+// #define KEY_Q 81
 
 #define U_CHAR_SZ 9	/** Size of Unicode character strings in bits */
 
@@ -65,6 +65,7 @@ int main(void)
 
 	bool is_running = true;
 
+	system("cls");
 	while (is_running) {
 
 		/** DRAW */
@@ -125,8 +126,8 @@ int main(void)
 		upper_char = (char)toupper(input_char);
 
 		/** INPUT PROCESSING */
-		if(upper_char == KEY_Q)
-			is_running = false;
+		// if(upper_char == KEY_ESC)
+		// 	is_running = false;
 
 		if (upper_char != 10) {
 			input_history[input_history_count] = upper_char;
